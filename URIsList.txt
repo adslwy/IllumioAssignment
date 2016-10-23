@@ -9,7 +9,7 @@ BaseURL + "users/login":            a POST request for user to log in. If sucess
                                            input Eg: {"username":"test","password":"111"}
                                            output Eg: "status": "Login successful!",
                                                       "success": true,
-                                                      "token": "eyJhbGci"
+                                                      "token": "eyJhbGci" 
 
 BaseURL + "users/register":         a POST request for new user to register, if input valid return success, otherwise return error
                                            input Eg: {"username":"test","password":"111"}
