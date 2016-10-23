@@ -1,5 +1,5 @@
 # IllumioAssignment
-<h1>An Secrets RestAPI implementation<h1 /><br />
+An Secrets RestAPI implementation<br />
 <li> The running instruction is in HowToRun.txt<br />
 <li> URI and input output example is in URIsList.txt<br />
 <li> How to test the API is in TestStandard.txt<br />
