@@ -1,5 +1,5 @@
 The API will asserts to be workable if the below assertions are satisified:
-
+ 
 1. /user GET: it should GET all the users profile
 
 2. /users/register POST: 
