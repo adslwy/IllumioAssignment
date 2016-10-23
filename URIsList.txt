@@ -1,0 +1,28 @@
+BaseURL + "users/":                 a GET request list all the registered users.
+                                    output Eg: 
+                                        {"_id":"580939ec90a036f27e06329d","username":"test1","__v":
+                                         0,"admin":false,"lastname":"","firstname":""},
+                                        {"_id":"58093db721d7e9f613570c6e","username":"test2","__v":
+                                         0,"admin":false,"lastname":"","firstname":""}
+
+BaseURL + "users/login":            a POST request for user to log in. If sucess, it will return a token that will used for auth request, otherwise it will return error 
+                                           input Eg: {"username":"test","password":"111"}
+                                           output Eg: "status": "Login successful!",
+                                                      "success": true,
+                                                      "token": "eyJhbGci"
+
+BaseURL + "users/register":         a POST request for new user to register, if input valid return success, otherwise return error
+                                           input Eg: {"username":"test","password":"111"}
+
+
+BaseURL + "secrets/":               a GET request for current login user view his secrets
+                                         output Eg: JSON response with all user details
+
+
+		                     a POST method for login user to create new secret, if input valid return success, otherwise return error
+                                           input Eg:{"secrets":"hello world"}
+
+BaseURL + "secrets/{{secretId}}":   a PUT method for login user to update an exist secret by its id, if input valid return sucess, otherwise return error				
+                                           input Eg:{"secrets": "hello kitty"}
+
+                                    a DELETE method for user to delete an exist secret by its id

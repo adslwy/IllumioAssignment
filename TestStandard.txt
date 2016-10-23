@@ -1,0 +1,27 @@
+The API will asserts to be workable if the below assertions are satisified:
+
+1. /user GET: it should GET all the users profile
+
+2. /users/register POST: 
+   1) it should not register a user into database without valid input
+   2) it should register users into database with valid input
+
+3. /users/login POST:
+   1) it should not login user without valid password or username
+   2) user should login with valid password or username
+
+4. /secret POST:login user should create secrets with valid input
+
+5. /secret GET: 
+   1) login users should GET all their secrets
+   2) login users should not GET other users' secrets
+
+6. secret/:id PUT:
+   1) login users should able to update their secrets
+   2) login users should not update other users secrets
+   3) login users should not update unexsit secret
+
+7. secret/:id DELETE:
+   1) login users should not delete other users secrets
+   2) login users should delete their secrets
+   3) login users should not delete unexsit secret

@@ -1,0 +1,6 @@
+To setup the running environment, make sure your computer has installed nodejs, npm, and has Chrome browser with Postman extension.
+To start the REST API, 
+1. first you need to run: npm --install under the base directory to install all the dependency. 
+2. still under the base directory run: npm --test to run the test case
+3. go into ./bin/ directory, run node www to start the server. Then you can open postman to test the REST API.
+4. to test the API under Postman, first you need to register a user at baseURL + /users/register, then login at baseURL + /users/login. After that copy the token from login return message and paste it into the header, set the key to 'x-access-token', value to 'token'. Then you can do CRUD to the secrets.
